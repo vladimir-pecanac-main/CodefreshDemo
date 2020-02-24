@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 as build-image
 WORKDIR /home/app
-COPY *.sln ./
-COPY */*.csproj ./
+COPY ./CodefreshDemo.sln ./
+COPY ./*/*.csproj ./
 RUN for file in $(ls *.csproj); do mkdir -p ./${file%.*}/ && mv $file ./${file%.*}/; done
 RUN dotnet restore
 COPY . .

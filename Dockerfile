@@ -20,6 +20,4 @@ COPY --from=build-image /publish .
 
 ENV ASPNETCORE_URLS="http://0.0.0.0:5000"
 
-EXPOSE 80/tcp
-
 ENTRYPOINT ["dotnet", "AccountOwnerServer.dll"]

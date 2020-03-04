@@ -19,7 +19,7 @@ namespace AccountOwnerServer.Controllers
         
         public OwnerController(ILoggerManager logger, IRepositoryWrapper repository, IMapper mapper) 
         { 
-            _logger = logger; 
+            _logger = logger;
             _repository = repository;
             _mapper = mapper;
         }

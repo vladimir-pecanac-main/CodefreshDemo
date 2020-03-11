@@ -8,7 +8,7 @@ namespace AccountOwnerServer
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().MigrateDatabase().Run();
+            CreateHostBuilder(args).Build().Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
